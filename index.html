@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="golang/style.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="golang/01.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/02.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/03.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/04.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/05.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/06.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/07.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/08.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+        <section
+          data-markdown="golang/09.md"
+          data-separator-vertical="\n\n"
+          data-separator="\n\n\n"
+        ></section>
+      </div>
+    </div>
+
+    <script src="plugin/math/math.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: '{\\bf R}' } },
+        },
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+      });
+    </script>
+  </body>
+</html>
